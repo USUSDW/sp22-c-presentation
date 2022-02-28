@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     // Convert cmd line args
     unsigned int n = atoi(argv[1]);
-    char *sieve_array = malloc(sizeof(char) * n);
+    char *sieve_array = calloc(n, sizeof(char));
 
     fprintf(stderr, "finding primes up to %d ...\n", n);
 
@@ -49,6 +49,6 @@ int main(int argc, char *argv[])
             printf("%d\n", i);
         }
     }
-    
+
     free(sieve_array);
 }

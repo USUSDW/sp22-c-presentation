@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     }
     auto time = duration_cast<milliseconds>(high_resolution_clock::now() - start);
 
-    std::cerr << "\nTime taken: " << (time.count() / 1000.0) << " seconds.";
+    std::cerr << "\nTime taken: " << (time.count() / 1000.0) << " seconds." << std::endl;
 
     // Print results
     std::stringstream ss;
