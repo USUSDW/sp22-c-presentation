@@ -12,5 +12,6 @@
 #include <stdio.h> // Standard library for input/output
 int main(int argc, char **argv)
 {
-    printf("Hello World!");
+    printf("Hello World!\n");
+    return 1;
 }
