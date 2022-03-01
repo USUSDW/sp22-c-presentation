@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
+        "calloc",
         "Numpy",
-        "Scipy"
-    ]
+        "Scipy",
+        "TIOBE"
+    ],
+    "discord.enabled": false
 }

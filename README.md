@@ -54,6 +54,10 @@ In C, we don't have fancy things like objects, or classes.  Instead, we work wit
 
 Void is primarily used to specify return types or parameters for functions that don't accept or return anything.
 
+## What about strings?
+
+Strings as a datatype doesn't exists inside of C.  Instead, we use an array of characters, that end with the `\0` character to mark the string as terminated.  For most all operations dealing with strings, we use the `strings.h` library built into C for methods like copying, comparing, and concatenating strings.
+
 ## Disadvantages of C
 
 The largest part with C is that what you C i s what you get. C won't hold your hand, and requires you to do everything. You are in charge of managing memory, managing scope, managing imports, and tracking your programs memory usage.
