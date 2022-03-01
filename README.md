@@ -24,6 +24,8 @@ C also has the widest compatibility of all other languages, being able to be com
 
 ## Getting Started with C
 
+In C, we don't have fancy things like objects, or classes.  Instead, we work with primitives, pointers, and a combination of the two to build every data type of the language.
+
 ### Basic Data types
 
 | Type           | Storage size                      | Value range                                          |
@@ -74,7 +76,19 @@ Rather than having our program control its own memory, C instead opts to give th
 - `realloc(void * ptr, size_t)` - (Memory reallocation) resizes a given address. Useful for changing the size of an array that has already been created.
 - `free(void *ptr)` - marks the block of memory as available.
 
+An example of what memory allocation would look like would be something like this
+
+```c
+...
+int *array = malloc (sizeof(int) * 8);
+for (int i = 0; i < 8; i ++) 
+  printf("%d", array[i]);
+...
+```
+
 However, simple mistakes such as forgetting to free memory, confusing pointers, or not allocating enough memory can lead to dangerous side effects.
+
+Accessing memory outside of your scope is perfectly legal too, however dont be suprised if your program crashes because of it!
 
 ## Combining languages, using C in python
 
