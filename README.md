@@ -2,14 +2,14 @@
 
 C is a "general purpose" _procedural_ programming language. First used in 1972, its been continually updated throughout the years, with the most recent version being C17 (released 2018).
 
-Because of the simple, procedural nature of C, it mapes efficiently to machine instructions like assembly very easily. Today, you mainly see C being used to write elements of your OS, drivers, and many other applications. Popular application you've more than likely used that are build using C include:
+Because of the simple, procedural nature of C, it maps efficiently to machine instructions like assembly very easily. Today, you mainly see C being used to write elements of your OS, drivers, and many other applications. Popular application you've more than likely used that are build using C include:
 
 - Python (CPython, the default python interpreter)
   - Numpy
   - Scipy
   - Pandas
   - Many other python packages and inclusions
-- Linux (The linux kernel is primarly programmed using C and assembly), Windows, and MacOS
+- Linux (The linux kernel is primarily programmed using C and assembly), Windows, and MacOS
 - SQLITE
 - Super Mario 64
 
@@ -17,12 +17,14 @@ C is described mostly as being the "mother of all modern programming language", 
 
 ## Why use C in 2022
 
-C is fast and efficient, faster than most any other programming language. In fact, many languages like python, Perl, php, C++, and C have their compilers and interpreters written using c. C gains this advantage do to its ability to compile straight to native machine code, without relying on VM, compatability layers, or interpreters to run the code.
+C is fast and efficient, faster than most any other programming language. In fact, many languages like python, Perl, php, C++, and C have their compilers and interpreters written using c. C gains this advantage do to its ability to compile straight to native machine code, without relying on VM, compatibility layers, or interpreters to run the code.
 
-C also has the widest compatibility of all other languages, being able to be compile for x86, ARM, and other special microcontrollers. In fact, one of the largest uses for C in 2022 its is use in embedded systems and microcontrollers, where large overheads like full scale OS aren't feasible / efficient.  Each program has milimal overhead, but it also platform independent.  
+C also has the widest compatibility of all other languages, being able to be compile for x86, ARM, and other special micro-controllers. In fact, one of the largest uses for C in 2022 its is use in embedded systems and micro-controllers, where large overheads like full scale OS aren't feasible / efficient.  Each program has minimal overhead, but it also platform independent.  
 > What this means for you is that if you wan't your code to work on both windows and linux, you have to compile binaries for each.
 
 ## Getting Started with C
+
+To get a list of tools required for c, head to [`Requirements`](requirements.md)
 
 In C, we don't have fancy things like objects, or classes.  Instead, we work with primitives, pointers, and a combination of the two to build every data type of the language.
 
@@ -88,10 +90,10 @@ for (int i = 0; i < 8; i ++)
 
 However, simple mistakes such as forgetting to free memory, confusing pointers, or not allocating enough memory can lead to dangerous side effects.
 
-Accessing memory outside of your scope is perfectly legal too, however dont be suprised if your program crashes because of it!
+Accessing memory outside of your scope is perfectly legal too, however don't be surprised if your program crashes because of it!
 
 ## Combining languages, using C in python
 
-Because C is so flexible, and because Cpython is written primarily in C, there is a deep intergration between the two. For example, if you look through the source code of libraries such as numpy you'll find heaps of C code to help speed up the calculations.
+Because C is so flexible, and because Cpython is written primarily in C, there is a deep integration between the two. For example, if you look through the source code of libraries such as numpy you'll find heaps of C code to help speed up the calculations.
 
 You can also import this sort of "C binding" into your own python code. An example is shown here in the python binding section.
